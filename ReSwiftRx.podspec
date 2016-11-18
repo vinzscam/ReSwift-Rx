@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ReSwiftRx'
-  s.version          = '1.0.0'
+  s.version          = '1.0.2'
   s.summary          = 'Rx extension for ReSwift\'s Store'
   s.description      = <<-DESC
     ReSwiftRx is an extension for ReSwift that provides a method
