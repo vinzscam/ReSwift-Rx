@@ -1,13 +1,29 @@
 # ReSwiftRx
 
-[![CI Status](http://img.shields.io/travis/Vincenzo Scamporlino/ReSwiftRx.svg?style=flat)](https://travis-ci.org/Vincenzo Scamporlino/ReSwiftRx)
+ReSwiftRx is an extension for ReSwift that provides a method
+    to create an observable sequence of states from a Store.
+
 [![Version](https://img.shields.io/cocoapods/v/ReSwiftRx.svg?style=flat)](http://cocoapods.org/pods/ReSwiftRx)
 [![License](https://img.shields.io/cocoapods/l/ReSwiftRx.svg?style=flat)](http://cocoapods.org/pods/ReSwiftRx)
 [![Platform](https://img.shields.io/cocoapods/p/ReSwiftRx.svg?style=flat)](http://cocoapods.org/pods/ReSwiftRx)
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+### `createObservable()`
+Following the example explained in [ReSwift](https://github.com/ReSwift/ReSwift#about-reswift):
+```js
+
+let mainStore = Store<AppState>(
+    reducer: CounterReducer(),
+    state: nil
+)
+//subscribe to store's events
+let disposable = mainStore.createObservable()
+	.subscribe(onNext: { state in
+    	//reflect the app state into views
+    })
+
+```
 
 ## Requirements
 
