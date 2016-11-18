@@ -1,6 +1,0 @@
-use_frameworks!
-target 'ReSwiftRx_Tests' do
-  pod 'ReSwiftRx', :path => '../'
-  
-  
-end
