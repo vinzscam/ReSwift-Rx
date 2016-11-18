@@ -1,7 +1,7 @@
 # ReSwiftRx
 
-ReSwiftRx is an extension for ReSwift that provides a method
-    to create an observable sequence of states from a Store.
+ReSwiftRx is an extension for [ReSwift](https://github.com/ReSwift/ReSwift) that provides a method
+    to create a [RxSwift](https://github.com/ReactiveX/RxSwift)'s observable sequence of states from a Store.
 
 [![Version](https://img.shields.io/cocoapods/v/ReSwiftRx.svg?style=flat)](http://cocoapods.org/pods/ReSwiftRx)
 [![License](https://img.shields.io/cocoapods/l/ReSwiftRx.svg?style=flat)](http://cocoapods.org/pods/ReSwiftRx)
