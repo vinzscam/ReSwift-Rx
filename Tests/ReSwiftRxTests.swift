@@ -60,13 +60,13 @@ class ReSwiftRxTests: XCTestCase{
         self.mainStore = nil
     }
 
-    func testCreateObservableSubscribe() {
+    func testAsObservableSubscribe() {
         let counterLimit = 10;
         let attempts = 15
         let expectationsTimeout = TimeInterval(10)
 
         let exp = expectation(description: "Wait until one or more events are received.")
-        self.disposable = mainStore?.createObservable()
+        self.disposable = mainStore?.asObservable()
             .filter{ AppState -> Bool in
                 AppState.counter > counterLimit
             }

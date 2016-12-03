@@ -12,7 +12,13 @@ import RxSwift
 
 
 extension Store {
+
+    @available(*, unavailable, renamed: "asObservable")
     open func createObservable() -> Observable<State> {
+        return asObservable()
+    }
+
+    open func asObservable() -> Observable<State> {
         return Observable.create{ [weak self] observer in
             
             let storeSubscriber = RxStoreSubscriber<State>(observer: observer)

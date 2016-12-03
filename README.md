@@ -9,7 +9,7 @@ ReSwiftRx is an extension for [ReSwift](https://github.com/ReSwift/ReSwift) that
 
 ## Example
 
-### `createObservable()`
+### `asObservable()`
 Following the example explained in [ReSwift](https://github.com/ReSwift/ReSwift#about-reswift):
 ```js
 
@@ -18,7 +18,7 @@ let mainStore = Store<AppState>(
     state: nil
 )
 //subscribe to store's events
-let disposable = mainStore.createObservable()
+let disposable = mainStore.asObservable()
 	.subscribe(onNext: { state in
     	//reflect the app state into views
     })
